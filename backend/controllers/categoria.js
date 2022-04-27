@@ -7,7 +7,6 @@ const getCategorias = async( req, res = response ) => {
 
     const categorias = await Categoria.find();
                                 
-
     res.json({
         ok: true,
         categorias

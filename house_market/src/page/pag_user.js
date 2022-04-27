@@ -57,8 +57,6 @@ export const Pag_user = () => {
             </div>
           </div>
         </div>
-
-      <Footer />
     
     </>
   )

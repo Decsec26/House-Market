@@ -9,9 +9,14 @@ import { Login_Page } from '../page/Login_Page';
 import { Registro_Page } from '../page/Registro_Page';
 import { Pag_user } from '../page/pag_user';
 import { Dashboard } from '../admin/dashboard'
+import { Añadir_publicacion } from '../page/Añadir_publicacion';
+import { Añadir_publicacion_Form } from '../page/Añadir_publicacion_form';
+import { Servicios } from '../page/Servicios';
+import { Blog } from '../page/blog';
+import { BlogIndividual } from '../page/Blog_ind';
+import { PostBlog } from '../page/PostBlog';
 
 
-<<<<<<< Updated upstream
 
 const token = localStorage.getItem('token');
 
@@ -19,8 +24,6 @@ const token = localStorage.getItem('token');
 
 
 
-=======
->>>>>>> Stashed changes
 export const Rutas = () => {
   return (
      <Routes>
@@ -35,6 +38,12 @@ export const Rutas = () => {
       <Route path="admin/dasboard" element={<Dashboard />} />
       <Route path="*" element={<Error_404 />} />
       <Route path="pag_user" element={<Pag_user />} />
+      <Route path="pag_user/publicar/producto" element={<Añadir_publicacion />} />
+      <Route path="form" element={<Añadir_publicacion_Form />} />
+      <Route path="servicios" element={<Servicios />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="blogind/:id" element={<BlogIndividual />} />
+      <Route path="blogPost" element={<PostBlog />} />
 
     </Routes>
 

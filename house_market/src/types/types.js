@@ -10,6 +10,11 @@ export const types = {
     uiFinishLoading: '[UI] Finish loading',
 
     showCategorias: '[CATG] Categorias Loaded',
-    namesCategorias: '[CATG] Categorias Names Loaded'
+    namesCategorias: '[CATG] Categorias Names Loaded',
 
+    loadedUbicacion: '[POST] Ubicacion guardada',
+    loadedCategoria: '[POST] Categorias guardada',
+    loadedDatos: '[POST] Datos guardada',
+    loadedPlan: '[POST] Plan guardada'
+    
 }

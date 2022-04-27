@@ -11,14 +11,7 @@ import { obtenerCategorias } from '../actions/categoria';
 
 export const Dashboard = () => {
 
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-      
-        setTimeout(() => {
-            dispatch(obtenerCategorias())
-        }, 1500);
-    }, [])
+    
     
     
     const [screen, setScreen] = useState(<Post_producto />);

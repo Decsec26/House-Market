@@ -8,32 +8,32 @@ import img6 from '../../data/img/6.jpg'
 const dbImagenes = [
     {
         id: "1",
-        nombre: "FOTO GALERIA",
+        nombre: "A. $250",
         img: img1,
     },
     {
         id: "2",
-        nombre: "FOTO GALERIA",
+        nombre: "A. $250",
         img: img2,
     },
     {
         id: "3",
-        nombre: "FOTO GALERIA",
+        nombre: "A. $250",
         img: img3,
     },
     {
         id: "4",
-        nombre: "FOTO GALERIA",
+        nombre: "V. $7250",
         img: img4,
     },
     {
         id: "5",
-        nombre: "FOTO GALERIA",
+        nombre: "A. $250",
         img: img5,
     },
     {
         id: "6",
-        nombre: "FOTO GALERIA",
+        nombre: "V. $4250",
         img: img6,
     },
 ]

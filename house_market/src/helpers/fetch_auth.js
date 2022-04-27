@@ -3,10 +3,11 @@ const baseUrl = "http://localhost:4000/api"
 const fetchSinToken = ( endpoint, data, method = 'GET' ) => {
 
     const url = `${ baseUrl }/${ endpoint }`;
-    console.log(url)
+    console.log(data)
     if ( method === 'GET' ) {
         return fetch( url );
     } else {
+        console.log("re")
         return fetch( url, {
             method,
             headers: {

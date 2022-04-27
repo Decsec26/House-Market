@@ -33,7 +33,7 @@ export const Post_producto = () => {
         
         setTimeout(() => {
             setChecking(false)       
-        }, 3000);
+        }, 4000);
         
     }, [])
     
@@ -214,7 +214,7 @@ export const Post_producto = () => {
 
             </div>
 
-             <div className="Single-Producto-col-derecha__form-campo">
+            <div className="Single-Producto-col-derecha__form-campo">
                 <label for="floatingInputValue">UBICACIÓN</label>     
             </div>
 

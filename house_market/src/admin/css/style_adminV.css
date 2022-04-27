@@ -178,20 +178,34 @@
      border: solid;
      border-width: 0.5px;
      font-size: 14px;
-     height: 130px;
+     height: 180px;
      padding: 5px;
-     width: 250px;
+     width: 100%;
 }
 
 .form-select__add-catg option{
     font-family: var(--playfair);
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 24px;
+    margin-left: 40px;
     color: grey;
 }
+
 
 .add_producto-cat{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.Single-Producto-col-derecha__form-campo h3{
+    font-family: var(--playfair);
+    color: var(--primario);
+}
+
+.div-select-catg h4{
+    color: var(--secundario);
+    font-family: var(--fuenteHeading);
+    margin-left: 25px;
 }

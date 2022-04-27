@@ -13,13 +13,11 @@ export const Contacts = () => {
    <>
         <Header />
 
-        <Banner_page Page={"Contacto"} />
+        <Banner_page Page={"SOBRE NOSOTROS"} />
 
         <Contactanos />
 
         <MapsContacto />
-
-        <Direccion_empresa_contacto />
 
         <AreaContacto />
    

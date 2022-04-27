@@ -1,6 +1,7 @@
 import { fetchSinToken, fetchConToken } from "../helpers/fetch_auth";
 
 import { types } from '../types/types';
+import { startLoading } from "./ui";
 
 export const obtenerCategorias = () => {
     return async (dispatch) => {
@@ -18,6 +19,7 @@ export const obtenerCategorias = () => {
             console.log( body.categorias )
             dispatch( categorias( body.categorias ) )
             dispatch( namesCategorias( body.categorias ))
+            dispatch(startLoading())
         } else {
             // Swal.fire("Error", body.msg, "error");
             console.Console("error", body.msg);

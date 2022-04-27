@@ -2,10 +2,12 @@ import React, {useState} from 'react'
 import LOGO from '../../data/img/HOUSE_MARKET_logo.png'
 import { Outlet, Link } from "react-router-dom";
 import  Modal  from '../Modal/Modal'
+import { useDispatch, useSelector } from 'react-redux';
 
 export const Header = () => {
 
-
+    const { uid } = useSelector(state => state.auth);
+    
 
   return (
     <>  
@@ -16,9 +18,9 @@ export const Header = () => {
                   <div className="header-informacion">
 
                       <div className="header-informacion__logo">
-                          <a href="">
+                          <Link to="/">
                               <img src={LOGO} alt="LOGO" height="100%" width="100%"></img>
-                          </a>
+                          </Link>
                       </div>
 
                       <div className="header-informacion__opciones">
@@ -46,16 +48,8 @@ export const Header = () => {
                           </div>
 
                           <div className="header-informacion__opciones--login">
-<<<<<<< Updated upstream
-                          
-
-                            <div className='loginYRegistro'><Link to="/login">Login   </Link></div>
-                            <dvi className='loginYRegistro'><Link to="/registro">registro</Link></dvi>
-
-=======
                           <div className='loginYRegistro'><Link to="/login">LOGIN</Link></div>
-                          <dvi className='loginYRegistro'><Link to="/registro">REGISTRO</Link></dvi>
->>>>>>> Stashed changes
+                          <dvi className='loginYRegistro'><Link to="/pag_user">PERFIL</Link></dvi>
                           </div>
                           <div className="header-informacion__opciones--buscarIcon">
                               <a href="">
@@ -75,10 +69,10 @@ export const Header = () => {
                        <Link to="/">INICIO</Link>
                         <Link to="/Allcatalogo">CATALOGO</Link>
                         <Link to="/Allcatalogo">ALQUILER</Link>
-                        <Link to="/pag_user">SOBRE NOSOTROS</Link>
-                        <Link to="/contacto">CONTACTO</Link>
+                        <Link to="/contacto">SOBRE NOSOTROS</Link>
+                        <Link to="/servicios">SERVICIOS</Link>
                         <Link to="/galeria">GALERIA</Link>
-                        <Link to="/">BLOG</Link>
+                        <Link to="/blog">BLOG</Link>
 
 
                   </div>
